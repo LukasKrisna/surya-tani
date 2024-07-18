@@ -8,8 +8,8 @@
                     <div class="categories__item categories__large__item set-bg"
                         data-setbg="{{ asset('me') }}/img/banner.png">
                         <div class="categories__text">
-                            <h3>belanja merchandise musik otentik dari artis dan band favorit Anda.</h3>
-                            <a href="#">Jelajahi Sekarang</a>
+                            <h3>temukan keindahan alam di rumah Anda dengan tanaman hias, buah, kayu, dan pupuk berkualitas terbaik dari UD. Surya Tani</h3>
+                            <a href="{{ url('/product') }}">Jelajahi Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -21,8 +21,8 @@
                                     data-setbg="{{ asset('storage/' . $category->thumbnails) }}">
                                     <div class="categories__text">
                                         <h4>{{ $category->name }}</h4>
-                                        <p>{{ $category->Products()->count() }} item</p>
-                                        <a href="#">Jelajahi</a>
+                                        <p style="color:black">{{ $category->Products()->count() }} items</p>
+                                        <a href="{{ url('/category') }}">Jelajahi</a>
                                     </div>
                                 </div>
                             </div>

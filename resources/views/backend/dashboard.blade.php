@@ -152,7 +152,7 @@
             </div>
         </div>
         </div>
-        <div class="col-lg-4">
+        {{-- <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
               {!! $data['chartPie']->container() !!}
@@ -203,15 +203,15 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> --}}
         </div>
     </div>
     <div class="row">
         <div class="col-md-8">
-          
+
         </div>
         <div class="col-md-4">
-         
+
         </div>
     </div>
 @endsection
