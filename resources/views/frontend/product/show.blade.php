@@ -41,7 +41,7 @@
                             <span>( 138 reviews )</span>
                         </div>
                         <form action="{{ route('cart.store') }}" method="POST">
-                        <div class="product__details__price">{{ $data['product']->price }} <span></div>
+                            <div class="product__details__price">{{ rupiah($data['product']->price) }} <span></span></div>
                         @csrf
                         <div class="product__details__button">
                             <div class="quantity">
@@ -93,7 +93,7 @@
                 @slot('route', route('product.show', ['categoriSlug' => $product_related->Category->slug, 'productSlug' =>
                     $product_related->slug]))
                     @slot('name', $product_related->name)
-                    @slot('price', $product_related->price)
+                    @slot('price',rupiah($product_related->price))
                 @endcomponent
                 </div>
                @endforeach

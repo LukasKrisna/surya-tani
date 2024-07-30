@@ -62,7 +62,7 @@
                                 @slot('route', route('product.show', ['categoriSlug' => $new_categories2->slug, 'productSlug' =>
                                     $product->slug]))
                                     @slot('name', $product->name)
-                                    @slot('price', $product->price)
+                                    @slot('price',rupiah($product->price))
                                 @endcomponent
                             </div>
                         @endforeach
