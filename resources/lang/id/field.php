@@ -9,6 +9,7 @@ return [
     'thumbnails' => 'Thumbnails',
     'created_at' => 'Dibuat',
     'price' => 'Harga',
+    'stock' => 'Stok',
     'description' => 'Deskripsi',
 
     // Category

@@ -60,6 +60,10 @@
                                     <span>Berat : </span>
                                     <p>{{ $data['product']->weight }} Gram</p>
                                 </li>
+                                <li>
+                                    <span>Stok : </span>
+                                    <p>{{ $data['product']->stock }}</p>
+                                </li>
                             </ul>
                         </div>
                     </div>

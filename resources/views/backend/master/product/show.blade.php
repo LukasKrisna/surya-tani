@@ -22,10 +22,14 @@
                                 <td>{{ __('field.category_name') }}</td>
                                 <td>: {{ $data['product']->category->name }}</td>
                             </tr>
-    
+
                             <tr>
                                 <td>{{ __('field.price') }}</td>
                                 <td>: {{ rupiah($data['product']->price) }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{ __('field.stock') }}</td>
+                                <td>: {{ rupiah($data['product']->stock) }}</td>
                             </tr>
                             <tr>
                                 <td>{{ __('field.weight') }}</td>
